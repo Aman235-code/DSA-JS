@@ -148,17 +148,111 @@
 //   console.log("1 notes: " + amount);
 // }
 
-let day = 2;
-switch (day) {
-  case 1:
-    console.log("Monday");
-    break;
+// let day = 2;
+// switch (day) {
+//   case 1:
+//     console.log("Monday");
+//     break;
 
-  case 2:
-    console.log("Tuesday");
-    break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
 
-  default:
-    console.log("invalid");
-    break;
+//   default:
+//     console.log("invalid");
+//     break;
+// }
+
+// part 3
+// loop
+// i = 1;
+// for (var i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+// console.log(i);
+
+// var n = Number(prompt("Enter a number: "));
+// if (isNaN(n)) {
+//   console.log("Invalid input");
+// } else {
+//   if (n > 0) {
+//     var sum = 0;
+//     for (var i = 1; i <= n; i++) {
+//       sum += i;
+//     }
+//     console.log(sum);
+//   } else {
+//     console.log("should be positive or more than 0");
+//   }
+// }
+
+// var n = Number(prompt("Enter a number: "));
+// for (var i = 1; i <= Math.floor(n / 2); i++) {
+//   if (n % i == 0) {
+//     console.log(i);
+//   }
+// }
+
+// var n = Number(prompt("Enter a number: "));
+// var prime = true;
+// for (var i = 2; i <= Math.floor(n / 2); i++) {
+//   if (n % i == 0) {
+//     prime = false;
+//   }
+// }
+// console.log(prime);
+
+// var n = Number(prompt("Enter a number: "));
+// var sum = 0;
+// while (n > 0) {
+//   var rem = n % 10;
+//   sum += rem;
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum);
+
+// var n = 12345;
+// var rev = 0;
+// while (n > 0) {
+//   var rem = n % 10;
+//   n = Math.floor(n / 10);
+//   rev = rev * 10 + rem;
+// }
+// console.log(rev);
+
+//strong
+// var n = 145;
+// var ac = n;
+// var sum = 0;
+// while (n > 0) {
+//   var rem = n % 10;
+//   var fact = 1;
+//   for (i = 1; i <= rem; i++) {
+//     fact *= i;
+//   }
+//   sum += fact;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(sum === ac ? "Yes" : "No");
+
+// guess
+let rendom = Math.floor(Math.random() * 100) + 1;
+let guess = -1;
+while (guess !== rendom) {
+  // guess = Number(prompt("Enter a number: "));
+  guess = 78;
+  console.log(guess);
+  if (isNaN(guess) || guess < 1 || guess > 100) {
+    console.log("here");
+    console.log("try again");
+    continue;
+  }
+  if (guess > rendom) {
+    console.log("too high");
+  } else if (guess < rendom) {
+    console.log("too low");
+  } else {
+    console.log("correct ", guess);
+  }
 }
