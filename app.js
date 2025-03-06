@@ -235,24 +235,3 @@
 // }
 
 // console.log(sum === ac ? "Yes" : "No");
-
-// guess
-let rendom = Math.floor(Math.random() * 100) + 1;
-let guess = -1;
-while (guess !== rendom) {
-  // guess = Number(prompt("Enter a number: "));
-  guess = 78;
-  console.log(guess);
-  if (isNaN(guess) || guess < 1 || guess > 100) {
-    console.log("here");
-    console.log("try again");
-    continue;
-  }
-  if (guess > rendom) {
-    console.log("too high");
-  } else if (guess < rendom) {
-    console.log("too low");
-  } else {
-    console.log("correct ", guess);
-  }
-}
